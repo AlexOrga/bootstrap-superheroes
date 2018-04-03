@@ -15,7 +15,7 @@ const buildDomString = (array) => {
         domString +=         `<h3 class="panel-title">${superhero.name}</h3>`;
         domString +=      `</div>`;
         domString +=      `<div class="panel-body">`;
-        domString +=         `<img class="charImage" src="${superhero.image}">`;
+        domString +=         `<img class="charImage ${superhero.gender.toLowerCase()}CharImage" src="${superhero.image}">`;
         domString +=         `<p class="charDescription">${superhero.description}</p>`;
         domString +=     `</div>`;
         domString +=    `</div>`;
