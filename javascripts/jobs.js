@@ -30,9 +30,9 @@ const addHeroSelectionEventListeners = () => {
     }
 };
 
-const displaySuperhero = heroes => {
+const displaySuperhero = (heroes) => {
     let domString = "";
-    heroes.forEach(hero => {
+    heroes.forEach(hero) => {
       if (hero.id === selectedHero) {
         domString += `<div class="row">`;
         domString += `<div class="col-sm-4">`;
